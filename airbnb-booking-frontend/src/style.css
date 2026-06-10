@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f6f8;
+}
+
+.navbar {
+  background: #ff385c;
+  color: white;
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 18px;
+  font-weight: bold;
+}
+
+.container {
+  padding: 40px;
+}
+
+.container h1,
+.container h2 {
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card h3 {
+  color: #ff385c;
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin: 8px 0;
+  color: #555;
+}
+
+.form-container {
+  width: 450px;
+  margin: 50px auto;
+  background: white;
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #ff385c;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input,
+textarea,
+select {
+  padding: 13px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+}
+
+textarea {
+  min-height: 90px;
+}
+
+button {
+  background: #ff385c;
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 3px;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #e11d48;
+}
+
+table {
+  width: 100%;
+  background: white;
+  border-collapse: collapse;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+}
+
+th {
+  background: #ff385c;
+  color: white;
+  padding: 14px;
+}
+
+td {
+  padding: 13px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .navbar a {
+    display: inline-block;
+    margin: 6px;
+  }
+
+  .form-container {
+    width: 90%;
+  }
+
+  .container {
+    padding: 20px;
+  }
+}
